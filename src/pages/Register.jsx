@@ -46,15 +46,6 @@ return<>
 <input onChange={(e)=>setInp1(e.target.value)} placeholder='uid'></input><br/>
 
 <center><pre>
-login -->2input
-register-->2input
-
-main page ->image
-react app ->
-<br/>
-Routes
-navigate
-contextapi
 
 
 

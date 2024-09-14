@@ -8,6 +8,9 @@ import User from './pages/User';
 import { useState } from 'react';
 import { createContext } from 'react';
 import Authorized from './pages/Authorized';
+import Front from "./todo/Front"
+import Edit from "./todo/Edit"
+
 export const GlobalC=createContext()
 
 
@@ -31,15 +34,27 @@ function practiceroutes(){
 </Routes>
 </GlobalC.Provider>
   </>
-
+  
 }
 
 
 
+function todomaker(){
+  return<>
+<GlobalC.Provider value={{setTheme,theme}}>
+<Routes>
+<Route path='/'  element={<Front/>}   />
+<Route path='/user/:uid' element={<Edit/>} />
+
+</Routes>
+</GlobalC.Provider>
+  </>
+}
+
 let obj={}
 
   return <>
-{practiceroutes()}
+{todomaker()}
 
 
 

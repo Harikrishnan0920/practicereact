@@ -7,7 +7,7 @@ let {uid}=useParams()
 const [state,setState]=useState([])
 const [inp,setinp]=useState([])
 
-github
+
 
 
 let post=async ()=>{
