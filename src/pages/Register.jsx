@@ -1,12 +1,17 @@
 import React, { useState,useEffect, useContext } from 'react'
 import Login from './Login'
 import { useNavigate } from 'react-router-dom'
+import { GCAPI } from '../store/Store'
 
 const Register = ({change}) => {
 
 const [inp,setInp]=useState("")
 
 const [inp1,setInp1]=useState("")
+  
+const {state}=useContext(GCAPI)
+
+console.error(state)
 
 useEffect(()=>{
     go()
@@ -35,7 +40,7 @@ let navigate=useNavigate()
 
 return<>
     <h1><center>hello from register hi username  {change}</center></h1>
-
+<h1>dynamic {state.count}</h1>
 
 
 

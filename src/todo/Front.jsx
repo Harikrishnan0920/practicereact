@@ -48,6 +48,7 @@ console.log(error)
     <div>
      <h1><center>Todo list</center></h1> 
 <input  value={Inp}  placeholder='task' onChange={(e)=>Setinp(e.target.value)}/>
+
 <button onClick={async ()=>{
 
 

@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom"
-import {Create} from "./store/Store" 
+import {GCF} from "./store/Store"
 
 
 
@@ -13,9 +13,9 @@ let data="hello hi there"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
-
-
+<GCF>
 <App/> 
+</GCF>
 
 
 

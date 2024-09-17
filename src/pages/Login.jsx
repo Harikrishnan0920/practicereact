@@ -3,12 +3,12 @@ import {useNavigate} from "react-router-dom"
 import Display from "./Display"
 import Register from "./Register"
 import axios from "axios"
-import { Gc } from "../store/Store"
+
 
 function Login({fromparent}){
 const [statename,setStatename]= useState([])   
 console.log("im rendering")
-let {state}=useContext(Gc)
+
 
 
 

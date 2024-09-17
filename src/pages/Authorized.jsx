@@ -1,6 +1,7 @@
 import React, { useContext, useReducer } from 'react'
 import { GlobalC } from '../App'
 import axios from 'axios'
+import Register from './Register'
 
 const Authorized = () => {
   const {setTheme} = useContext(GlobalC)
@@ -42,7 +43,7 @@ const [state,dispatch] = useReducer(reducer,initial)
   return (
     <div>
       <h1>HEllo im </h1>
-
+<Register/>
       <button onClick={fun} className='btn btn-dark mt-4 mx-4'>crud button</button>
       <button onClick={()=>setTheme((prev)=>prev=="black"?"blue":"black")}>hello</button>
     </div>

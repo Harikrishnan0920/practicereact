@@ -31,9 +31,7 @@ let task=[{t:"task1",id:1},{t:"task1",id:2},{t:"task1",id:3}]
 {name}
 
 
-props drilling --> component 
-<br/>
-context api --> context context share context use
+
 
 
 

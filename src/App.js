@@ -10,6 +10,7 @@ import { createContext } from 'react';
 import Authorized from './pages/Authorized';
 import Front from "./todo/Front"
 import Edit from "./todo/Edit"
+import Reducer from './todo/Reducer';
 
 export const GlobalC=createContext()
 
@@ -20,6 +21,9 @@ function App() {
   let string="somerandom words"
   
 const [theme,setTheme]=useState("black")
+
+
+
 
 function practiceroutes(){
   return<>
@@ -45,7 +49,7 @@ function todomaker(){
 <Routes>
 <Route path='/'  element={<Front/>}   />
 <Route path='/user/:uid' element={<Edit/>} />
-
+<Route path='/reducer' element={<Reducer/>}/>
 </Routes>
 </GlobalC.Provider>
   </>
@@ -54,7 +58,7 @@ function todomaker(){
 let obj={}
 
   return <>
-{todomaker()}
+{practiceroutes()}
 
 
 
